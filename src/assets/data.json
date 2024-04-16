@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Los Angeles",
+    "streets": [
+      {
+        "name": "Sunset Boulevard",
+        "houses": [
+          {
+            "name": "Villa 101",
+            "user": {
+              "owner": "John Doe",
+              "tenant": "Jane Smith",
+              "dependent": ["Alice Doe", "Bob Doe"]
+            },
+            
+            "maintainer": {
+              "staff": ["Mike Johnson", "Emily Davis"]
+            },
+            
+            "features": {
+              "bedrooms": 3,
+              "tvs": 2,
+              "counters": 4,
+              "cars": 2,
+              "description": "A luxurious villa with a panoramic view of the city."
+            }
+          },
+          {
+            "name": "Villa 102",
+            "user": {
+              "owner": "Clara Bell",
+              "tenant": "Tom Hanks",
+              "dependent": ["Sara Bell", "Ryan Bell"]
+            },
+            "maintainer": {
+              "staff": ["Anna Lee", "Greg White"]
+            },
+            "features": {
+              "bedrooms": 4,
+              "tvs": 3,
+              "counters": 5,
+              "cars": 3,
+              "description": "A modern home with advanced home automation systems."
+            }
+          }
+        ]
+      },
+      {
+        "name": "Sunrise Avenue",
+        "houses":[
+          {
+            "name": "Villa 103",
+            "user": {
+              "owner": "Lara Tell",
+              "tenant": "Bob Lanks",
+              "dependent": ["Kara Tell", "Bryan Bell"]
+            },
+            "maintainer": {
+              "staff": ["Hanna Lee", "Greg Black"]
+            },
+            "features": {
+              "bedrooms": 2,
+              "tvs": 2,
+              "counters": 2,
+              "cars": 2,
+              "description": "An old run-down establishment."
+            }
+          }
+        ]
+      }
+
+    ]
+  },
+  {
+    "name": "New York",
+    "streets": [
+      {
+        "name": "Fifth Avenue",
+        "houses": [
+          {
+            "name": "Apartment 20B",
+            "user": {
+              "owner": "Sarah Parker",
+              "tenant": "Nina Morris",
+              "dependent": ["Molly Parker", "Dexter Parker"]
+            },
+            "maintainer": {
+              "staff": ["Liam Neeson", "Sophia Loren"]
+            },
+            "features": {
+              "bedrooms": 2,
+              "tvs": 1,
+              "counters": 2,
+              "cars": 1,
+              "description": "A stylish apartment located in the heart of the city."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

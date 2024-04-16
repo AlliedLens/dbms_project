@@ -1,0 +1,35 @@
+<mat-sidenav-container>
+    <mat-form-field appearance="fill">
+
+      <mat-label>Select a city</mat-label>
+
+      <mat-select (selectionChange)="getStreetNamesFromCitySelected($event.value)">
+        <mat-option *ngFor="let cityName of cityNames" [value]="cityName">
+          {{cityName}}
+        </mat-option>
+      </mat-select>
+    
+    </mat-form-field> 
+
+    <mat-form-field *ngIf="selectedCity" appearance="fill">
+    
+      <mat-label>Select a street</mat-label>
+      
+      <mat-select (selectionChange)="getHouseDetailsFromStreetSelected(cityName, $event.value)">
+        <mat-option *ngFor="let streetName of streetNames" [value]="streetName">
+          {{streetName}}
+        </mat-option>
+       </mat-select>      
+    
+    </mat-form-field>   
+
+    <mat-form-field *ngIf="selectedHouse" appearance="fill">
+        <mat-label>Select a House</mat-label>
+        <mat-select>
+          <mat-option>
+            House
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+</mat-sidenav-container>

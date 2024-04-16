@@ -1,0 +1,6 @@
+<section>
+    <button mat-button color="accent" *ngFor="let theme of themes" (click)="setTheme(theme.name)">
+        <mat-icon> {{theme.icon}} </mat-icon>
+    </button>
+</section>
+  
