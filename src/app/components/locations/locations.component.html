@@ -1,4 +1,5 @@
 <mat-sidenav-container>
+
     <mat-form-field appearance="fill">
 
       <mat-label>Select a city</mat-label>
@@ -15,7 +16,7 @@
     
       <mat-label>Select a street</mat-label>
       
-      <mat-select (selectionChange)="getHouseDetailsFromStreetSelected(cityName, $event.value)">
+      <mat-select (selectionChange)="getHouseDetailsFromStreetSelected(selectedCity, $event.value)">
         <mat-option *ngFor="let streetName of streetNames" [value]="streetName">
           {{streetName}}
         </mat-option>
@@ -23,13 +24,21 @@
     
     </mat-form-field>   
 
-    <mat-form-field *ngIf="selectedHouse" appearance="fill">
+    <mat-form-field *ngIf="selectedStreet" appearance="fill">
         <mat-label>Select a House</mat-label>
-        <mat-select>
-          <mat-option>
-            House
+
+        <mat-select (selectionChange)="this.selectedHouse = $event.value">
+          <mat-option *ngFor="let house of houses" [value]="house">
+            {{house.name}}  
           </mat-option>
         </mat-select>
+
     </mat-form-field>
+
+    <div *ngIf="this.selectedHouse" >
+      <mat-card>
+        {{this.selectedHouse}}
+      </mat-card>      
+    </div>
 
 </mat-sidenav-container>

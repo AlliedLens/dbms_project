@@ -66,14 +66,12 @@ export class LocationsComponent implements OnInit{
   }
 
   getHouseDetailsFromStreetSelected(cityName:string, streetName:string){
-    this.getHousesFromStreet(cityName, )
-    
+    this.selectedStreet = streetName;
+    this.getHousesFromStreet(cityName, this.selectedStreet).subscribe(houses => this.houses = houses);    
   }
 
   ngOnInit():void{
-
     this.getCityNames();
-
   }
 
 }
