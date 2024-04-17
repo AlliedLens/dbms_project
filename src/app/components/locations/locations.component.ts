@@ -22,7 +22,7 @@ export class LocationsComponent implements OnInit{
   
   selectedCity: string | null = null;
   selectedStreet: string | null = null;
-  selectedHouse: string | null = null;
+  selectedHouse: House | null = null;
 
   constructor(private http:HttpClient){
 

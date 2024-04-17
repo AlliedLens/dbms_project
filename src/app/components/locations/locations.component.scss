@@ -15,3 +15,60 @@ mat-select{
     text-align: center;
 }
 
+.house-div{
+
+    display:flex;
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    // width: 60%;
+    
+    .house-card {
+      margin: 20px;
+    //   width: 50%;
+    //   justify-content: center;
+    //   align-items: center;
+    //   align-text: center;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      mat-card{
+        padding: 2%;
+      }
+    
+      mat-card-header {
+        align-items: center;
+        justify-content: center;
+      }
+    
+      mat-card-title {
+        font-size: 20px;
+        font-weight: bold;
+        justify-content:  center;
+        align-items:  center;
+      }
+    
+
+      mat-card-subtitle {
+        font-size: 16px;
+        color: #666;
+      }
+    
+      mat-card-content {
+        p, div {
+          margin-top: 10px;
+        }
+    
+        ul {
+          padding-left: 20px;
+        }
+    
+        li {
+          list-style-type: disc;
+        }
+      }
+    }
+
+}
